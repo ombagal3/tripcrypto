@@ -36,6 +36,7 @@ exports.handler = async (event) => {
         Body: body,
         ContentType: "application/json"
       }).promise();
+      
       return { statusCode: 201, body: `Wrote ${key}` };
     } else {
       return { statusCode: 405, body: "Method not allowed" };
@@ -45,4 +46,5 @@ exports.handler = async (event) => {
     return { statusCode: 500, body: err.message || "error" };
   }
 };
+
 
