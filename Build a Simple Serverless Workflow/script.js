@@ -26,6 +26,7 @@ exports.handler = async (event) => {
         headers: { "Content-Type": obj.ContentType || "application/octet-stream" },
         body: obj.Body.toString('utf8')
       };
+      
     } else if (method === 'PUT') {
       if (!key) return { statusCode: 400, body: "Missing ?key=" };
       const body = event.body || "";
@@ -44,3 +45,4 @@ exports.handler = async (event) => {
     return { statusCode: 500, body: err.message || "error" };
   }
 };
+
