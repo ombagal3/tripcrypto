@@ -31,6 +31,7 @@ exports.handler = async (event) => {
       if (!key) return { statusCode: 400, body: "Missing ?key=" };
       const body = event.body || "";
       await s3.putObject({
+        
         Bucket: BUCKET,
         Key: key,
         Body: body,
@@ -47,6 +48,7 @@ exports.handler = async (event) => {
     return { statusCode: 500, body: err.message || "error" };
   }
 };
+
 
 
 
