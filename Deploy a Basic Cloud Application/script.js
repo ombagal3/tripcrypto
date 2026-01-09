@@ -3,6 +3,7 @@
 // Client  →  API Gateway  →  Lambda (handler)  ↔  S3 (bucket for objects)
 
 
+
 // GET /object?key=... → returns object from S3 (base64 when binary)
 
 // PUT /object → writes JSON body to S3 with a key query param
