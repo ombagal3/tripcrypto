@@ -42,10 +42,12 @@ exports.handler = async (event) => {
     } else {
       return { statusCode: 405, body: "Method not allowed" };
     }
+    
   } catch (err) {
     console.error(err);
     return { statusCode: 500, body: err.message || "error" };
   }
 };
+
 
 
