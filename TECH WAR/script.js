@@ -28,31 +28,9 @@ function calculateEMI() {
   let emi = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
   emi = Math.round(emi);
 
-  let totalPay = emi * N;
-  let interest = totalPay - P;
 
-  emiText.innerText = emi;
-  principalText.innerText = P;
-  interestText.innerText = Math.round(interest);
-  totalAmount.innerText = "₹" + Math.round(totalPay);
-
-  let principalPercent = (P / totalPay) * 100;
-  let interestPercent = 100 - principalPercent;
-
-  donut.style.background = `conic-gradient(
-    orange 0% ${principalPercent}%,
-    #6fa8dc ${principalPercent}% 100%
-  )`;
-
-}
-
-[amount, rate, years].forEach(el => el.addEventListener("input", () => {
-  amountVal.value = amount.value;
-  rateVal.value = rate.value;
-  yearsVal.value = years.value;
-  calculateEMI();
-}));
 
 
 
 calculateEMI();
+
