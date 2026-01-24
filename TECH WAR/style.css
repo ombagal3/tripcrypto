@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border: 3px solid #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.left {
+  width: 45%;
+}
+
+.right {
+  width: 45%;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+input[type="number"] {
+  width: 120px;
+  padding: 5px;
+  float: right;
+}
+
+.donut {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin: auto;
+  background: conic-gradient(
+    orange 0deg 70%,
+    #6fa8dc 70% 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut span {
+  font-weight: bold;
+  text-align: center;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 16px;
+}
