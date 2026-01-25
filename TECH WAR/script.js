@@ -21,6 +21,8 @@ const donut = document.getElementById("donut");
 
 function calculateEMI() {
 
+  
+
   let P = +amount.value;
   let R = +rate.value / 12 / 100;
   let N = +years.value * 12;
@@ -34,5 +36,6 @@ function calculateEMI() {
 
 
 calculateEMI();
+
 
 
