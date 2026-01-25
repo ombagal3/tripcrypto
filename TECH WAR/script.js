@@ -26,6 +26,7 @@ function calculateEMI() {
   let N = +years.value * 12;
 
   let emi = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
+  
   emi = Math.round(emi);
 
 
@@ -33,4 +34,5 @@ function calculateEMI() {
 
 
 calculateEMI();
+
 
