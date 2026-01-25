@@ -34,9 +34,8 @@ function calculateEMI() {
 
 
 
-
-
 calculateEMI();
+
 
 
 
