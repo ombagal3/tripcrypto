@@ -30,12 +30,14 @@ function calculateEMI() {
   let emi = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
   
   emi = Math.round(emi);
+  
 
 
 
 
 
 calculateEMI();
+
 
 
 
