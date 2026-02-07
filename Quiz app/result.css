@@ -1,0 +1,46 @@
+ body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+        /* background-image:url('https://www.shutterstock.com/video/clip-3897782997-realistic-colorful-confetti-animation-falling-down-perfect?trackingId=2211632e-1183-4108-996a-328a6c2b48f4') no-repeat center center;
+    background-size: cover; */
+    }
+
+    .score-card {
+      background: #ffffff;
+      width: 260px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .score-title {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .score-value {
+      font-size: 48px;
+      font-weight: bold;
+      color: #2f80ed;
+      margin: 10px 0;
+    }
+
+    .score-subtitle {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .score-footer {
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+      color: #27ae60;
+      font-weight: 600;
+    }
