@@ -66,14 +66,8 @@ div.innerHTML = `
 </div>
 `;
 container.appendChild(div);
-
-
-    });
-
+ });
 }
-
-
-
 
 
 const removeProduct = (i) => {
@@ -162,5 +156,6 @@ if (container) {
 if (cartContainer) {
   displayCart();
 }
+
 
 
