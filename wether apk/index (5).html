@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app winter" id="app">
+  <!-- SEARCH BAR -->
+<div class="search-box">
+  <input  type="text" id="city-input" placeholder="Search city..."/>
+  <button id="search-btn">Search</button>
+</div>
+
+  <!-- HEADER -->
+  <header class="top-bar">
+    <div class="location">
+      <span>📍</span>
+      <p id="city">New York, USA</p>
+    </div>
+    <p id="date" class="date">Friday, Jan 6</p>
+  </header>
+
+  <!-- MAIN WEATHER -->
+  <section class="main-weather">
+    <div class="temp-box">
+      <h1 id="temp">16°</h1>
+      <p id="condition-text">Storm with Rain</p>
+
+      <div class="extra">
+        <span id="wheter-speed">💨 2.4 km/h</span>
+        <span id="chances">💧 70%</span>
+      </div>
+    </div>
+
+    <!-- WEATHER GIF / ICON -->
+    <div class="weather-visual">
+      <!-- JS future me src change karega -->
+      <img id="weather-gif" src="assets/summer.png" alt="weather">
+    </div>
+  </section>
+
+  <!-- HOURLY GRAPH (STATIC UI) -->
+  <section class="hourly">
+    <div class="hour">12°</div>
+    <div class="hour">14°</div>
+    <div class="hour active">16°</div>
+    <div class="hour">18°</div>
+    <div class="hour">22°</div>
+  </section>
+
+  <!-- WEEK FORECAST -->
+  <aside class="forecast">
+    <div id="today-box" class="day active">Fri 🌧 16°</div>
+    <div class="day">Sat ❄ 10°</div>
+    <div class="day">Sun ☀ 22°</div>
+    <div class="day">Mon 🌤 19°</div>
+  </aside>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
