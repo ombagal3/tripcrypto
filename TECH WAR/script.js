@@ -3,7 +3,6 @@ const rate = document.getElementById("rate");
 const years = document.getElementById("years");
 
 
-
 const amountVal = document.getElementById("amountVal");
 const rateVal = document.getElementById("rateVal");
 const yearsVal = document.getElementById("yearsVal");
