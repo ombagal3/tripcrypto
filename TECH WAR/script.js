@@ -8,7 +8,6 @@ const rateVal = document.getElementById("rateVal");
 const yearsVal = document.getElementById("yearsVal");
 
 
-
 const emiText = document.getElementById("emi");
 const principalText = document.getElementById("principal");
 const interestText = document.getElementById("interest");
